@@ -1,0 +1,61 @@
+/* line 5, ../sass/styles.scss */
+html {
+  margin: 0;
+  height: 100%;
+}
+
+/* line 10, ../sass/styles.scss */
+body {
+  font-size: 20px;
+  font-weight: 400px;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 8px #000;
+  background: #7b1fa2;
+  color: #fff;
+  box-sizing: border-box;
+  padding-top: 0;
+  position: relative;
+  transition: opacity 1s, padding-top .3s, right .3s;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 26, ../sass/styles.scss */
+.container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/background.jpg);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+/* line 38, ../sass/styles.scss */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 45, ../sass/styles.scss */
+.img-main {
+  flex: 1;
+}
+/* line 47, ../sass/styles.scss */
+.img-main img {
+  margin: auto;
+  display: block;
+  height: 35vh;
+}
+
+/* line 53, ../sass/styles.scss */
+.text-main {
+  flex: 1;
+  text-align: center;
+}
