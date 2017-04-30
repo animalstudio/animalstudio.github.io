@@ -1,17 +1,40 @@
-/* line 5, ../sass/styles.scss */
+@import url("https://fonts.googleapis.com/css?family=Mr+Dafoe");
+/* line 11, ../sass/partials/_variables.scss */
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+/* line 14, ../sass/partials/_variables.scss */
+.dropshadow {
+  -webkit-filter: drop-shadow(3px 3px 3px #000);
+  filter: drop-shadow(3px 3px 3px #000);
+}
+
+/* line 19, ../sass/partials/_variables.scss */
+.shadow {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  position: absolute;
+  float: left;
+}
+
+/* line 1, ../sass/partials/_base.scss */
 html {
   margin: 0;
   height: 100%;
 }
 
-/* line 10, ../sass/styles.scss */
+/* line 7, ../sass/partials/_base.scss */
 body {
   font-size: 20px;
   font-weight: 400px;
   font-family: 'Lato', sans-serif;
   text-shadow: 1px 1px 8px #000;
-  background: #7b1fa2;
+  background: #757575;
   color: #fff;
+  display: block;
   box-sizing: border-box;
   padding-top: 0;
   position: relative;
@@ -21,41 +44,65 @@ body {
   margin: 0;
 }
 
-/* line 26, ../sass/styles.scss */
+/* line 12, ../sass/styles.scss */
 .container {
-  margin: 0;
-  height: 100%;
+  margin: 0 auto;
   width: 100%;
-  background-image: url(../images/background.jpg);
+}
+
+/* line 17, ../sass/styles.scss */
+.main-page {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/hairslon.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row;
 }
 
-/* line 38, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .main-container {
   flex: 1;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  z-index: 2;
+}
+/* line 38, ../sass/styles.scss */
+.main-container svg {
+  width: 70vh;
+  height: 70vh;
 }
 
-/* line 45, ../sass/styles.scss */
-.img-main {
-  flex: 1;
-}
-/* line 47, ../sass/styles.scss */
-.img-main img {
-  margin: auto;
-  display: block;
-  height: 35vh;
+/* line 44, ../sass/styles.scss */
+.about-me {
+  height: 600px;
+  width: 100%;
+  background: #616161;
 }
 
-/* line 53, ../sass/styles.scss */
-.text-main {
-  flex: 1;
-  text-align: center;
+/* line 49, ../sass/styles.scss */
+.gallery {
+  height: 100vh;
+  width: 100%;
+  background: url(../images/foam-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 58, ../sass/styles.scss */
+.border-1 {
+  width: 100%;
+  height: 200px;
+  background-color: #616161;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/border-1.png);
 }
