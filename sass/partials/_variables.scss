@@ -1,0 +1,26 @@
+$black: #000;
+$white: #fff;
+$purple-darken-2: #7b1fa2;
+$purple-darken-3: #6a1b9a;
+$purple-darken-4: #4a148c;
+$grey-darken-1: #757575;
+$grey-darken-2: #616161;
+$grey-darken-3: #424242;
+$grey-darken-4: #212121;
+
+.rotate180{
+	transform: rotate(180deg);
+}
+.dropshadow {
+    -webkit-filter: drop-shadow( 3px 3px 3px #000 );
+            filter: drop-shadow( 3px 3px 3px #000 );
+}
+
+.shadow{
+  height: 100%;
+  width: 100%;
+  background: rgba( 0 , 0 , 0 , 0.55);
+  z-index:1;
+  position:absolute;
+  float:left;
+}
